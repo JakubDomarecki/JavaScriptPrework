@@ -9,3 +9,11 @@ const result = [];
 /**
  * Write your code below!
  */
+for (const student of studentsData) {
+  const sum = student.math.reduce((acc, grade) => acc + grade, 0);
+  const average = sum / student.math.length;
+  result.push(`Średnia ocena z matematyki studenta ${student.name}: ${average.toFixed(2)}`);
+}
+for (const results of result) {
+  console.log(results);
+}
