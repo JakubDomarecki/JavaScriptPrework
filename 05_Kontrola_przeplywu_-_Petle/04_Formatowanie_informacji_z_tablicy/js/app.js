@@ -30,3 +30,9 @@ const result = [];
 /**
  * Write your code below!
  */
+for (const person of people) {
+  if( person.age > 30 ) {
+  result.push(`${person.name} ${person.surname} - wiek ${person.age} lat`);
+  }
+}
+    console.log(result);
